@@ -1,0 +1,8 @@
+#!/usr/bin/python
+
+from clize import run
+
+from pyhqbot.cli import launch
+
+if __name__ == '__main__':
+    run(launch)
