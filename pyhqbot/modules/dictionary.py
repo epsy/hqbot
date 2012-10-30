@@ -69,7 +69,7 @@ def tell(call, cmd, victim, term):
     else:
         call.bot.echo("{0}: {1}".format(victim, definition))
 
-word_re = re.compile(r'^(?P<excl>!)?(?P<word>\w+)(?(excl)|\?)$')
+word_re = re.compile(r'^(?P<word>\w+)\?$')
 
 @scanner(types=scanner.MSG)
 def wordsnooper(call, line, type):
